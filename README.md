@@ -1,17 +1,39 @@
 # drf-boilerplate
 Api from boilerplate using python
 
+## Features/Uses
+
+- Using Django rest framework;
+
+- Celery
+
+- Redis
+
+- Authenticate Module `Token authentication`
+
+- Pytest
+
+- Extends UserView to Profile
+
+- Postgress
+
 ## Subir projeto local
 
 1 - `git clone`
 
 2 - Entre na pasta da aplicação `cd drf-boilerplate`
 
+3 - Certifique-se de suas credenciais da aws e postgresSql antes de tudo no `settings/base.py` e `settings/local.py`
+
 3 - Crie sua venv `python3.5 -m venv venv`
 
 4 - Active evn `source venv/bin/activate`
 
 3 - Instale o requirements `pip install -r requirements/base.txt`
+
+4 - Rode makemigrations `python3.5 src/makemigrations.py migrate --settings=settings.local`
+
+4 - Rode migrate `python3.5 src/manage.py migrate --settings=settings.local`
 
 4 - Rode a aplicação `python3.5 src/manage.py runserver --settings=settings.local`
 
